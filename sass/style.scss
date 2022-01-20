@@ -797,15 +797,15 @@ textarea.field-border {
         margin: 10px 0;
         display: inline-block;
         color: $primary-color !important;
-    }
-}
 
-.filtr-drop a:hover{
-    color: $secondary-color !important;
-    background: transparent;
-}
-.filtr-drop .dropdown-item{
-    padding: 0 !important;
+        &:hover{
+            color: $secondary-color !important;
+            background: transparent;
+        }
+    }
+    .dropdown-item{
+        padding: 0 !important;
+    }
 }
 .src-filter a.btn {
     display: block;
@@ -820,23 +820,26 @@ textarea.field-border {
      background-color: transparent; 
      color: $primary-color;
 }
-.header-advt-banner img {
-    width: 100%;
-    display: block;
-}
+
 .header-advt-banner {
     margin-bottom: 25px;
+   
+    img {
+        width: 100%;
+        display: block;
+    }
 }
 .two-col-advt {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
 }
-.advt-col-inner img {
-    width: 100%;
-}
 .advt-col-inner {
     width: 48%;
+    
+    img {
+        width: 100%;
+    }
 }
 .ad-container {
     width: 95%;
@@ -848,10 +851,12 @@ textarea.field-border {
 }
 .side-banner {
     width: 9%;
+
+    img {
+        width: 100%;
+    }
 }
-.side-banner img {
-    width: 100%;
-}
+
 .side-ad-banner .more-page-inner {
     width: 91.5%;
 }
