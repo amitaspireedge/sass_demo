@@ -1016,13 +1016,13 @@ textarea.field-border {
   color: #333366;
 }
 
+.header-advt-banner {
+  margin-bottom: 25px;
+}
+
 .header-advt-banner img {
   width: 100%;
   display: block;
-}
-
-.header-advt-banner {
-  margin-bottom: 25px;
 }
 
 .two-col-advt {
@@ -1035,12 +1035,12 @@ textarea.field-border {
   margin-bottom: 25px;
 }
 
-.advt-col-inner img {
-  width: 100%;
-}
-
 .advt-col-inner {
   width: 48%;
+}
+
+.advt-col-inner img {
+  width: 100%;
 }
 
 .ad-container {
@@ -1073,7 +1073,7 @@ textarea.field-border {
   text-align: center;
 }
 
-.activation-message > img {
+.activation-message img {
   width: 150px;
   margin-bottom: 40px;
 }
@@ -1091,15 +1091,15 @@ textarea.field-border {
   margin-top: 35px;
 }
 
-.back-to-home img {
-  width: 26px;
-  margin: 0 5px 0 0;
-}
-
 .back-to-home {
   font-weight: 500;
   margin-top: 38px;
   display: inline-block;
+}
+
+.back-to-home img {
+  width: 26px;
+  margin: 0 5px 0 0;
 }
 
 /*----Reset Password----*/
@@ -1168,26 +1168,26 @@ textarea.field-border {
     font-size: 22px;
   }
   /*---------Write Review----------*/
-  .review-options ul li a {
-    font-size: 16px;
-  }
   .review-options {
     padding-bottom: 75px;
-  }
-  .container-right {
-    width: 65%;
   }
   .review-options ul li {
     margin-right: 40px;
   }
+  .review-options a {
+    font-size: 16px;
+  }
+  .container-right {
+    width: 65%;
+  }
   .page-heading {
     padding-bottom: 40px;
   }
-  .field-border > .material-icons {
-    font-size: 40px;
-  }
   .field-border {
     font-size: 15px;
+  }
+  .field-border .material-icons {
+    font-size: 40px;
   }
   .hero-src-cover {
     width: 700px;
@@ -1214,8 +1214,6 @@ textarea.field-border {
   }
   .h-src-inr input {
     font-size: 15px;
-  }
-  .h-src-inr input {
     padding: 12px 60px 12px 20px;
   }
   .h-src-inr .src-submit {
@@ -1225,18 +1223,18 @@ textarea.field-border {
   .field-cover {
     margin-bottom: 22px;
   }
-  .save-review .form-group label:before {
-    padding: 15px;
-  }
-  .save-review .form-group label {
-    font-size: 15px;
-    width: 380px;
-  }
   .save-review .form-group input:checked + label:after {
     top: 7px;
     left: 14px;
     width: 8px;
     height: 18px;
+  }
+  .save-review .form-group label {
+    font-size: 15px;
+    width: 380px;
+  }
+  .save-review .form-group label:before {
+    padding: 15px;
   }
   .submit-btn .material-icons {
     font-size: 16px;
@@ -1261,16 +1259,14 @@ textarea.field-border {
   }
   .hero-section .h-src-inr input {
     font-size: 16px;
-  }
-  .hero-section .h-src-inr input {
     padding: 13px 50px 13px 40px;
   }
   .hero-section .h-src-inr .src-submit {
     right: 25px;
     top: 17px;
   }
-  .star-rated .material-icons {
-    font-size: 24px;
+  .hero-section .h-src-inr .src-submit img {
+    width: 25px;
   }
   .star-rated .material-icons {
     font-size: 21px;
@@ -1287,9 +1283,6 @@ textarea.field-border {
   }
   .f-social img {
     margin: 0 10px;
-  }
-  .h-src-inr .src-submit img {
-    width: 25px;
   }
   .hero-src-cover {
     width: 600px;
