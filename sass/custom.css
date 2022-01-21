@@ -16,13 +16,13 @@
           justify-content: space-between;
 }
 
-.radio-check-box:hover {
-  color: #509edb;
-}
-
 .temp-img img {
   width: 100%;
   margin-top: 10px;
+}
+
+.check-multiple.radio {
+  padding: 20px 30px;
 }
 
 .check-multiple.radio li {
@@ -30,31 +30,31 @@
   margin-bottom: 0;
 }
 
-.check-multiple.radio {
-  padding: 20px 30px;
-}
-
 .radio .custom-checkbox {
   display: inline-block;
 }
 
-.radio-check-box input:checked ~ label {
+.radio-check-box:hover {
   color: #509edb;
+}
+
+.radio-check-box label {
+  margin-bottom: 0;
+  cursor: pointer;
 }
 
 .radio-check-box input {
   display: none;
 }
 
+.radio-check-box input:checked ~ label {
+  color: #509edb;
+}
+
 .field-cover.other {
   width: 65%;
   margin-top: -10px;
   margin-left: auto;
-}
-
-.radio-check-box label {
-  margin-bottom: 0;
-  cursor: pointer;
 }
 
 .activities-other {
@@ -83,10 +83,21 @@
   visibility: hidden;
 }
 
+.upload-here {
+  position: relative;
+}
+
 .upload-here label {
   color: #333366;
   cursor: pointer;
   margin-bottom: 0;
+}
+
+.upload-here input {
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
 }
 
 span.upload-svg img {
@@ -98,28 +109,14 @@ span.upload-svg img {
   margin-right: 15px;
   border-radius: 15px;
   overflow: hidden;
-}
-
-.uploaded-img:last-child {
-  margin-right: 0;
-}
-
-.uploaded-img img {
   width: 70px;
   height: 70px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.upload-here {
-  position: relative;
-}
-
-.upload-here input {
-  position: absolute;
-  width: 100%;
-  cursor: pointer;
-  height: 100%;
+.uploaded-img:last-child {
+  margin-right: 0;
 }
 
 a.submit-btn.back {
@@ -233,7 +230,7 @@ span.cam-icon {
   right: 80px;
 }
 
-.cam-icon img {
+span.cam-icon img {
   width: 45% !important;
   display: block;
 }
@@ -274,10 +271,6 @@ span.cam-icon {
   margin-left: auto;
 }
 
-.con-img {
-  width: 50%;
-}
-
 .about-img img {
   width: 100%;
   height: 70vh;
@@ -288,6 +281,10 @@ span.cam-icon {
      object-position: left;
   -webkit-box-shadow: 0px 3px 10px 4px #00000059;
   box-shadow: 0px 3px 10px 4px #00000059;
+}
+
+.con-img {
+  width: 50%;
 }
 
 .about-para p {
@@ -309,12 +306,6 @@ span.cam-icon {
   width: 100%;
 }
 
-.contact-frm .submit-btn {
-  float: none;
-  margin: 0 auto;
-  width: 100px;
-}
-
 .light-blue-border::input-placeholder {
   color: #bcb8d1;
 }
@@ -325,6 +316,12 @@ span.cam-icon {
   padding: 40px 100px 40px;
   background: white;
   border-radius: 50px 0 0 50px;
+}
+
+.contact-frm .submit-btn {
+  float: none;
+  margin: 0 auto;
+  width: 100px;
 }
 
 .contact-frm .page-heading {
@@ -360,19 +357,19 @@ span.cam-icon {
   width: 48%;
 }
 
+.review-page .write-review .page-heading {
+  padding-left: 0;
+}
+
+.review-page .write-review .about-para {
+  margin: 50px 0;
+}
+
 .write-review-img {
   width: 48%;
   height: 50vh;
   overflow: hidden;
   border-radius: 50px;
-}
-
-.write-review .page-heading {
-  padding-left: 0;
-}
-
-.write-review .about-para {
-  margin: 50px 0;
 }
 
 /*------serch_page------*/
@@ -388,16 +385,16 @@ span.cam-icon {
   padding-left: 50px;
 }
 
-.serch-page-descri {
-  padding-right: 50px;
-}
-
 .serch-page-img .location-map img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
   border-radius: 25px;
+}
+
+.serch-page-descri {
+  padding-right: 50px;
 }
 
 .serch-page-descri .page-heading {
@@ -430,17 +427,17 @@ span.cam-icon {
   overflow: hidden;
 }
 
-.review-items .serch-beach-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 13px;
-}
-
 .serch-beach-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.review-items .serch-beach-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 13px;
 }
 
 .serch-beach {
@@ -557,16 +554,12 @@ ul.ser-icons li:last-child {
   font-weight: 500;
 }
 
-.auth-info .star-rated {
+.auth-info .auth-info .star-rated {
   margin-left: auto;
 }
 
 .src-review-cover {
   margin-top: 30px;
-}
-
-.review-items .rev-subtitle {
-  font-weight: 800;
 }
 
 .review-desc p a {
@@ -578,12 +571,26 @@ ul.ser-icons li:last-child {
   margin-bottom: 30px;
 }
 
+.review-items .rev-subtitle {
+  font-weight: 800;
+}
+
 .beach-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
+}
+
+.beach-gallery-items {
+  width: calc(25% - 15px);
+  height: 9vw;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .beach-gallery-items img {
@@ -598,16 +605,6 @@ ul.ser-icons li:last-child {
 .beach-gallery-items:hover img {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
-}
-
-.beach-gallery-items {
-  width: calc(25% - 15px);
-  height: 9vw;
-  border-radius: 15px;
-  overflow: hidden;
-  margin-right: 20px;
-  margin-top: 20px;
-  cursor: pointer;
 }
 
 .one-by-four .beach-gallery-items:nth-child(4n) {
@@ -626,6 +623,10 @@ ul.ser-icons li:last-child {
   margin-right: 0;
 }
 
+.beach-info-list {
+  margin-bottom: 20px;
+}
+
 .beach-info-list ul {
   padding: 0;
   margin: 0;
@@ -641,11 +642,7 @@ ul.ser-icons li:last-child {
   margin-right: 15px;
 }
 
-.beach-info-list {
-  margin-bottom: 20px;
-}
-
-.beach-info-list > span {
+.beach-info-list span {
   color: #509edb;
   font-weight: 500;
 }
@@ -654,7 +651,7 @@ ul.ser-icons li:last-child {
   position: relative;
 }
 
-span.review-restric img {
+.review-restric img {
   height: 22px;
   width: 22px;
 }
@@ -705,8 +702,8 @@ span.arrow img {
   display: flex;
 }
 
-.priv-sidebar-left a {
-  display: block;
+.privacy-two-sec li {
+  list-style: disc;
 }
 
 .priv-right {
@@ -721,15 +718,6 @@ span.arrow img {
 
 .privacy-policy a {
   text-decoration: underline;
-}
-
-.privacy-two-sec li {
-  list-style: disc;
-}
-
-.priv-sidebar-left a {
-  text-decoration: none !important;
-  margin-bottom: 10px;
 }
 
 .thank-mess {
@@ -748,21 +736,24 @@ span.arrow img {
   padding-left: 0;
 }
 
+.priv-sidebar-left li:last-child a {
+  margin-bottom: 0;
+}
+
+.priv-sidebar-left a {
+  display: block;
+  text-decoration: none !important;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
 .priv-sidebar-left .field-border {
   padding: 25px 25px;
   margin-bottom: 20px;
 }
 
-.priv-sidebar-left li:last-child a {
-  margin-bottom: 0;
-}
-
 .priv-right ul {
   padding-left: 17px;
-}
-
-.priv-sidebar-left ul li a {
-  font-weight: 400;
 }
 
 /******edit_profile*********media-query*********/
@@ -787,11 +778,11 @@ span.arrow img {
   .about-descrip {
     width: 36%;
   }
-  .contact-frm .submit-btn {
-    width: 110px;
-  }
   .contact-frm {
     padding: 40px 80px 40px;
+  }
+  .contact-frm .submit-btn {
+    width: 110px;
   }
   .write-review .about-para {
     margin: 40px 0;
@@ -855,14 +846,14 @@ span.arrow img {
   .write-review .about-para {
     margin: 40px 0;
   }
-  .serch-page-descri .page-heading .beach-name {
-    font-size: 18px;
-  }
   .star-numb .numb {
     font-size: 14px;
   }
   .serch-page-descri {
     padding-right: 15px;
+  }
+  .serch-page-descri .page-heading .beach-name {
+    font-size: 18px;
   }
   /*---13 Sept 2021---*/
   .beach-gallery-two-ad {
@@ -971,7 +962,7 @@ span.arrow img {
   .beach-info-list .info-title {
     font-size: 14px;
   }
-  .beach-info-list > span {
+  .beach-info-list span {
     font-size: 14px;
   }
   .svg-icon img {
@@ -1055,13 +1046,13 @@ span.arrow img {
   .abt-two-div .about-descrip .page-heading {
     text-align: center;
   }
-  .contact-p-img img {
-    width: 100%;
-    float: none;
-  }
   .contact-p-img {
     width: 90%;
     margin: 0 auto;
+  }
+  .contact-p-img img {
+    width: 100%;
+    float: none;
   }
   .contact-frm {
     border-radius: 50px;
@@ -1069,11 +1060,11 @@ span.arrow img {
   .edit-profile-email {
     font-size: 14px;
   }
-  .upload-profile input {
-    width: 70%;
-  }
   .upload-profile {
     width: 100%;
+  }
+  .upload-profile input {
+    width: 70%;
   }
   .write-review-form {
     width: 100%;
@@ -1084,7 +1075,7 @@ span.arrow img {
     bottom: 16px;
     right: 60px;
   }
-  .cam-icon img {
+  span.cam-icon img {
     width: 55% !important;
   }
   .write-review-img {
@@ -1125,13 +1116,11 @@ span.arrow img {
   .priv-sidebar-left {
     margin-right: 0;
     width: 100%;
+    position: inherit;
   }
   .priv-right {
     margin-left: 0;
     width: 100%;
-  }
-  .priv-sidebar-left {
-    position: inherit;
   }
 }
 
@@ -1204,10 +1193,6 @@ span.arrow img {
   .light-blue-border {
     border: 2px solid #509edb;
   }
-  span.cam-icon {
-    bottom: 13px;
-    right: 101px;
-  }
   .upload-profile {
     width: 100px;
     margin: 0 auto;
@@ -1256,17 +1241,17 @@ span.arrow img {
   .write-review-img {
     width: 100%;
   }
+  .review-page {
+    display: block;
+  }
   .review-page .write-review {
     width: 100%;
     margin-bottom: 90px !important;
   }
-  .review-page {
-    display: block;
-  }
   .my-review-items .review-items {
     padding: 10px;
   }
-  .star-wid-loc.d-flex {
+  .star-wid-loc .d-flex {
     display: block !important;
   }
   .star-wid-loc .star-numb {
@@ -1290,9 +1275,6 @@ span.arrow img {
   .about-img {
     margin-top: 0;
   }
-  .auth-info .date {
-    display: block;
-  }
   .auth-profile {
     height: 45px;
     width: 45px;
@@ -1300,6 +1282,9 @@ span.arrow img {
   }
   .auth-info {
     margin-bottom: 8px;
+  }
+  .auth-info .date {
+    display: block;
   }
   .serch-page {
     margin: 30px 0;

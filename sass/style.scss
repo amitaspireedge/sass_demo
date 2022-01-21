@@ -1198,12 +1198,12 @@ textarea.field-border {
 .review-options ul li {
     margin-right: 25px;
 }
-
-.profile-left img {
-    width: 180px;
-}
 .profile-left {
     padding-top: 80px;
+
+     img {
+        width: 180px;
+    }
 }
 .page-heading {
     padding-bottom: 30px;
@@ -1219,24 +1219,29 @@ textarea.field-border {
     padding-bottom: 20px;
 }
 
-.save-review .form-group label:before {
-    padding: 13px;
-}
-.save-review .form-group input:checked + label:after {
-    top: 7px;
-    left: 12px;
-    width: 8px;
-    height: 18px;
+.save-review {
+    
+    .form-group label:before {
+        padding: 13px;
+    }
+    .form-group input:checked + label:after {
+        top: 7px;
+        left: 12px;
+        width: 8px;
+        height: 18px;       
+    }
 }
 .container-right {
     margin-bottom: 50px;
 }
 .field-border {
     padding: 15px;
+
+    .material-icons {
+        font-size: 35px;
+    }
 }
-.field-border > .material-icons {
-    font-size: 35px;
-}
+
 .page-heading span {
     font-size: 14px;
 }
@@ -1253,32 +1258,39 @@ textarea.field-border {
 }
 /*--------------------------------------*/
 @media only screen and (max-width: 1200px){
-.h-src-inr input {
-    font-size: 14px;
-    padding: 7px 50px 7px 20px;
+.h-src-inr{
+
+    input {
+        font-size: 14px;
+        padding: 7px 50px 7px 20px;
+    }
+    
+    .src-submit {
+        right: 3px;
+        top: 3px;
+
+         img {
+            width: 17px;
+        }
+    }
 }
 .site-logo img {
     width: 190px;
 }
-.h-src-inr .src-submit img {
-    width: 17px;
-}
-.h-src-inr .src-submit {
-    right: 3px;
-    top: 3px;
-}
+
 .nav-menu {
     width: 200px;
 }
 .f-logo img {
     width: 190px;
 }
-.f-nav-menu ul li a {
-    font-size: 14px;
-}
 .f-nav-menu ul li {
     margin-right: 20px;
     padding-right: 20px;
+
+     a {
+        font-size: 14px;
+    }
 }
 .f-copyright {
     font-size: 14px;
@@ -1312,13 +1324,15 @@ textarea.field-border {
 .profile-left img {
     width: 160px;
 }
-.show .one {
-    transform: rotate( 45deg ) translate(7px, 4px);
-    -webkit-transform: rotate( 45deg ) translate(7px, 4px);
-}
-.show .three {
-    transform: rotate( -45deg ) translate(4px, -2px);
-    -webkit-transform: rotate( -45deg ) translate(4px, -2px);
+.show{
+     .one {
+        transform: rotate( 45deg ) translate(7px, 4px);
+        -webkit-transform: rotate( 45deg ) translate(7px, 4px);
+    }
+    .three {
+        transform: rotate( -45deg ) translate(4px, -2px);
+        -webkit-transform: rotate( -45deg ) translate(4px, -2px);
+    }
 }
 .nav-menu ul.menu a {
     font-size: 14px;
@@ -1364,13 +1378,15 @@ textarea.field-border {
     padding: 14px 0;
     width: 90%;
 }
-.show .three {
-    transform: rotate( -45deg ) translate(4px, -4px);
-    -webkit-transform: rotate( -45deg ) translate(4px, -4px);
-}
-.show .one {
-    transform: rotate( 45deg ) translate(5px, 5px);
-    -webkit-transform: rotate( 45deg ) translate(5px, 5px);
+.show {
+    .three {
+        transform: rotate( -45deg ) translate(4px, -4px);
+        -webkit-transform: rotate( -45deg ) translate(4px, -4px);
+    }
+     .one {
+        transform: rotate( 45deg ) translate(5px, 5px);
+        -webkit-transform: rotate( 45deg ) translate(5px, 5px);
+    }
 }
 .h-src-inr .src-submit img {
     width: 15px;
@@ -1411,11 +1427,12 @@ textarea.field-border {
 .field-label {
     font-size: 14px;
 }
-.profile-left img {
-    width: 140px;
-}
 .profile-left {
     padding-top: 50px;
+    
+    img {
+        width: 140px;
+    }
 }
 .review-options {
     padding-bottom: 40px;
@@ -1429,10 +1446,12 @@ textarea.field-border {
 }
 .beach-desc {
     display: block;
+
+    .star-rated {
+        margin-top: 5px;
+    }
 }
-.beach-desc .star-rated {
-    margin-top: 5px;
-}
+
 .hero-inner {
     height: 50vh;
 }
@@ -1515,15 +1534,18 @@ section.latest-review.mt-5 {
     font-size: 18px;
 }
 
-.activation-message > img {
-    width: 80px;
-    margin-bottom: 20px;
-}
-.activation-message p {
-    font-size: 16px;
-}
-.activation-message .submit-btn {
-    margin-top: 22px;
+.activation-message {
+    
+    img {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+     p {
+        font-size: 16px;
+    }
+    .submit-btn {
+        margin-top: 22px;
+    }
 }
 .reset-pwd-inner {
     width: 90%;
@@ -1544,18 +1566,24 @@ section.latest-review.mt-5 {
     width: 100%;
     text-align: center;
 }
-.review-options ul {
-    justify-content:center;
-    flex-flow: wrap;
-}
-.review-options ul li {
-    margin-right: 20px;
+.review-options {
+    padding-bottom: 25px;
+    padding-top: 0;
+
+    ul {
+        justify-content:center;
+        flex-flow: wrap;
+    }
+    li {
+        margin-right: 20px;
+    }
 }
 .write-review-form {
     width: 100%;
-}
-.write-review-form form {
-    width: 100%;
+
+    form {
+        width: 100%;
+    }
 }
 .container-fluid {
     width: 90%;
@@ -1566,23 +1594,20 @@ section.latest-review.mt-5 {
 .star-rated .material-icons {
     font-size: 16px;
 }
-.review-options {
-    padding-bottom: 25px;
-    padding-top: 0;
-}
 .container {
     width: 90%;
     flex-flow: wrap;
 }
-.f-nav-menu ul li {
-    margin-right: 0;
-    padding-right: 0;
-    margin: 10px 0;
-    border-right: 0;
-}
 .f-nav-menu ul {
      display: block;
     justify-content: center;
+
+    li {
+        margin-right: 0;
+        padding-right: 0;
+        margin: 10px 0;
+        border-right: 0;
+    }
 }
 .f-social {
     padding: 20px 0;
@@ -1605,21 +1630,25 @@ section.latest-review.mt-5 {
    display: flex;
     flex-flow: wrap;
     justify-content: center;
+
+    li {
+        margin-right: 20px;
+    }
 }
-.multiple-opt li {
-    margin-right: 20px;
-}
+
 .select-opt {
     margin: 5px 0;
-}
-.more-descr .submit-btn {
-    font-size: 14px;
-    margin-top: 10px;
 }
 .more-descr {
     margin-bottom: 20px;
     padding-bottom: 15px;
     flex-flow: wrap;
+
+    .submit-btn {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
 }
 .save-review .form-group label {
     width: 100%;
@@ -1632,9 +1661,10 @@ section.latest-review.mt-5 {
 }
 .check-multiple {
     display: block;
-}
-.check-multiple li {
-    width: 100%;
+          
+    li {
+        width: 100%;
+    }
 }
 .review-item {
     width: 47%;
@@ -1656,12 +1686,14 @@ section.latest-review.mt-5 {
     font-size: 18px;
     display: inline-block !important;
 }
-.beach-desc .star-rated {
-    margin-top: 5px;
-    display: inline-block;
-}
 .beach-desc {
     text-align: center;
+
+    .star-rated {
+        margin-top: 5px;
+        display: inline-block;
+    }
+    
 }
 .src-filter a.btn {
     padding: 0;
@@ -1670,13 +1702,15 @@ section.latest-review.mt-5 {
 .filtr-drop {
     margin-top: 14px;
     left: -10px !important;
+
+    a {
+        font-size: 13px;
+    }
+    
 }
 .h-src-inr .src-submit {
     right: 9px;
     top: 6px;
-}
-.filtr-drop a {
-    font-size: 13px;
 }
 .section-heading {
     margin-bottom: 20px;
@@ -1687,13 +1721,15 @@ section.latest-review.mt-5 {
 .hero-section .h-src-inr input {
     padding: 12px 20px 12px 20px;
 }
-.login-register .modal-dialog .modal-content {
-    padding: 20px;
-}
-.login-register .modal-dialog {
+.login-register .modal-dialog{
     max-width: 93%;
     width: 93%;
     margin: 0 auto;
+
+    .modal-content {
+        padding: 20px;
+    }
+    
 }
 .reg-form-cover .field-border {
     font-size: 14px;
@@ -1704,25 +1740,26 @@ section.latest-review.mt-5 {
     height: 30px;
     width: 30px;
 }
-.reg-check-box label::after {
-    left: 5px;
-}
+
 .reg-check-box label {
     font-size: 14px;
+
+    &::before {
+        width: 22px;
+        height: 22px;
+        top: 3px;
+    }
+    &::after {
+        top: 8px;
+        height: 12px;
+        width: 12px;
+        left: 5px;
+    }
 }
 .ac-cta-link a {
     font-size: 14px;
 }
-.reg-check-box label::before {
-    width: 22px;
-    height: 22px;
-    top: 3px;
-}
-.reg-check-box label::after {
-    top: 8px;
-    height: 12px;
-    width: 12px;
-}
+
 .submit-btn {
     font-size: 14px;
     font-weight: normal;
@@ -1747,12 +1784,14 @@ section.hero-section {
 .activation-message p br {
     display: none;
 }
-.back-to-home img {
-    width: 22px;
-    margin: 0 8px 0 0;
-}
+
 .back-to-home {
     margin-top: 25px;
+
+    img {
+        width: 22px;
+        margin: 0 8px 0 0;
+    }
 }
 .reset-pwd-inner {
     width: 90%;

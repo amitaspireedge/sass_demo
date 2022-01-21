@@ -9,38 +9,46 @@
     margin-top: 7px;
     justify-content: space-between;
 }
-.radio-check-box:hover {
-    color: #509edb;
-}
+
 .temp-img img{
     width: 100%;
     margin-top: 10px;
 }
-.check-multiple.radio li {
-    width: 30%;
-    margin-bottom: 0;
-}
 .check-multiple.radio {
    padding:20px 30px;  
+
+    li {
+        width: 30%;
+        margin-bottom: 0;
+    }
 }
 .radio .custom-checkbox {
     display: inline-block;
 }
-.radio-check-box input:checked ~ label{
-    color: #509edb;
-}
-.radio-check-box input {
-    display: none;
+.radio-check-box {
+    &:hover {
+        color: #509edb;
+    }
+
+    label {
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+    
+    input {
+        display: none;
+
+        &:checked ~ label{
+            color: #509edb;
+        }
+    }
 }
 .field-cover.other {
     width: 65%;
     margin-top: -10px;
     margin-left: auto;
 }
-.radio-check-box label {
-    margin-bottom: 0;
-    cursor: pointer;
-}
+
 .activities-other {
     width: 65%;
     margin-left: auto;
@@ -53,14 +61,25 @@
 }
 .file-upload-here{
     color: transparent;
+
+    &::-webkit-file-upload-button{
+        visibility: hidden;
+    }
 }
-.file-upload-here::-webkit-file-upload-button{
-  visibility: hidden;
-}
-.upload-here label{
-    color: #333366;
-    cursor: pointer;
-    margin-bottom: 0;
+.upload-here {
+    position: relative;
+   
+    label{
+        color: #333366;
+        cursor: pointer;
+        margin-bottom: 0;
+    }
+    input {
+        position: absolute;
+        width: 100%;
+        cursor: pointer;
+        height: 100%;
+    }
 }
     
 span.upload-svg img {
@@ -71,30 +90,22 @@ span.upload-svg img {
     margin-right: 15px;
     border-radius: 15px;
     overflow: hidden;
-}
-.uploaded-img:last-child {
-    margin-right: 0;
-}
-.uploaded-img img {
     width: 70px;
     height: 70px;
     object-fit: cover;
-}
-.upload-here {
-    position: relative;
-}
-.upload-here input {
-    position: absolute;
-    width: 100%;
-    cursor: pointer;
-    height: 100%;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 a.submit-btn.back {
     float: left;
+
+    .material-icons {
+        right: 8px;
+    }
 }
-a.submit-btn.back .material-icons {
-    right: 8px;
-}
+
 
 /*-------edit-profile-------*/
 
@@ -102,10 +113,12 @@ a.submit-btn.back .material-icons {
    font-size: 16px;
     font-weight: 500;
     margin: 35px 0;
+
+    p {
+        margin-bottom: 0;
+    }
 }
-.edit-profile-email p {
-    margin-bottom: 0;
-}
+
 .grey-color a{
     color: #999999;
 }
@@ -123,10 +136,12 @@ textarea#fname {
     font-weight: 500;
     margin-bottom: 15px;
     align-items: center;
+
+    label {
+        padding-left: 40px;
+    }
 }
-.edit-form-sub-headings label {
-    padding-left: 40px;
-}
+
 .camera-icon{
     font-family: 'Material Icons';
     font-weight: normal;
@@ -146,27 +161,32 @@ textarea#fname {
     padding: 5px;
     color: white;
 }
-.profile-left-camera input {
-    opacity: 0;
-}
-.profile-left-camera label {
-    position: absolute;
-    bottom: -24px;
-    left: 367px;
-        cursor: pointer;
+.profile-left-camera{ 
+
+    input {
+        opacity: 0;
+    }
+    label {
+        position: absolute;
+        bottom: -24px;
+        left: 367px;
+            cursor: pointer;
+    }
 }
 .upload-profile {
     position: relative;
     width: 265px;
+
+    input {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
 }
-.upload-profile input {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    cursor: pointer;
-}
+
 span.cam-icon {
     position: absolute;
     background: #333366;
@@ -178,11 +198,13 @@ span.cam-icon {
     justify-content: center;
     bottom: 23px;
     right: 80px;
+
+    img {
+        width: 45% !important;
+        display: block;
+    }
 }
-.cam-icon img {
-    width: 45% !important;
-    display: block;
-}
+
 .profile-left > span {
     color: #509edb;
     font-weight: 500;
@@ -209,19 +231,21 @@ span.cam-icon {
 .about-img {
     width: 40%;
     margin-left: auto;
+
+    img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+        border-radius: 50px 0 0 50px;
+        object-position: left;
+        -webkit-box-shadow: 0px 3px 10px 4px #00000059;
+        box-shadow: 0px 3px 10px 4px #00000059;
+    }
 }
 .con-img{
      width: 50%;
 }
-.about-img img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-    border-radius: 50px 0 0 50px;
-    object-position: left;
-    -webkit-box-shadow: 0px 3px 10px 4px #00000059;
-    box-shadow: 0px 3px 10px 4px #00000059;
-}
+
 .about-para p{
     font-size: 16px;
         text-align: justify;
@@ -229,22 +253,19 @@ span.cam-icon {
 /*--------contact-us----------------*/
 .light-blue-border {
     border: 3px solid #509edb;
-}
-.light-blue-border textarea {
-    border: none;
-    background: none;
-    height: 150px;
-    padding: 0;
-    resize: none;
-    width: 100%;
-}
-.contact-frm .submit-btn{
-    float: none;
-    margin: 0 auto;
-    width: 100px;
-}
-.light-blue-border::input-placeholder{
-    color: #bcb8d1;
+
+    textarea {
+        border: none;
+        background: none;
+        height: 150px;
+        padding: 0;
+        resize: none;
+        width: 100%;
+    }
+
+    &::input-placeholder{
+        color: #bcb8d1;
+    }
 }
 .contact-frm {
     -webkit-box-shadow: 0px 8px 10px 4px #00000038;
@@ -252,41 +273,56 @@ span.cam-icon {
     padding:40px 100px 40px;
     background: white;
     border-radius: 50px 0 0 50px;
+        
+    .submit-btn{
+        float: none;
+        margin: 0 auto;
+        width: 100px;
+    }
+
+    .page-heading {
+        text-align: center;
+        padding-left: 0;
+    }
 }
-.contact-frm .page-heading {
-    text-align: center;
-    padding-left: 0;
-}
+
 .contact-p-img {
     width: 52%;
     margin-right: -3%;
     position: relative;
+
+     img {
+        width: 80%;
+        float: right;
+    }
 }
-.contact-p-img img {
-    width: 80%;
-    float: right;
-}
+
 /*-----------no_review_page--------------*/
 .review-page{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .write-review {
+        width: 48%;
+
+        .page-heading {
+            padding-left: 0;
+        }
+        .about-para {
+            margin: 50px 0;
+        }
+    }
 }
-.review-page .write-review {
-    width: 48%;
-}
+
 .write-review-img {
     width: 48%;
     height: 50vh;
     overflow: hidden;
     border-radius: 50px;
 }
-.write-review .page-heading {
-    padding-left: 0;
-}
-.write-review .about-para {
-    margin: 50px 0;
-}
+
+
 /*------serch_page------*/
 .serch-page {
     margin: 80px 0;
@@ -296,51 +332,59 @@ span.cam-icon {
 }
 .serch-page-img {
     padding-left: 50px;
+
+    .location-map img {
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 25px;
+    }
 }
 .serch-page-descri {
     padding-right: 50px;
-}
 
-.serch-page-img .location-map img {
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 25px;
+    .page-heading {
+        padding-left: 0;
+        padding-bottom: 0px;
+    }
+
+    .edit-profile-heading {
+        padding-left: 0;
+    }
+
+    .page-heading .beach-name {
+        font-size: 18px;
+    }
 }
-.serch-page-descri .page-heading {
-    padding-left: 0;
-    padding-bottom: 0px;
-}
-.serch-page-descri  .edit-profile-heading {
-    padding-left: 0;
-}
-.serch-page-descri .page-heading .beach-name {
-    font-size: 18px;
-}
-.star-numb .numb{
-    font-size: 16px;
-    font-weight: 500;
-    margin-left: 20px;
-}
-.star-numb .star-rated .material-icons {
-    font-size: 20px;
+.star-numb{
+
+    .numb{
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+    .star-rated .material-icons {
+        font-size: 20px;
+    }
 }
 .serch-beach-img{
     width: 100px;
     height: 100px;
     border-radius: 20px;
     overflow: hidden;
+
+     img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 .review-items .serch-beach-img{
     width: 60px;
     height: 60px;
     border-radius: 13px;
 }
-.serch-beach-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 .serch-beach{
     margin-top:15px;
     display: flex;
@@ -355,11 +399,13 @@ span.cam-icon {
     padding: 0;
     flex-flow: wrap;
     margin-bottom: 0;
+
+    li {
+        width: 10%;
+        margin-bottom: 15px;
+    }
 }
-.ser-icons li {
-    width: 10%;
-    margin-bottom: 15px;
-}
+
 span.read-mor {
     float: right;
     margin-left: auto;
@@ -380,10 +426,12 @@ ul.ser-icons li:last-child {
     margin: 20px 0 0 0;
     border-bottom: 1px solid #509edb;
     padding-bottom: 25px;
+
+    &:nth-child(7){
+        border: none;
+    }
 }
-.serch-page-details:nth-child(7){
-    border: none;
-}
+
 
 /*-------Search 2-------*/
 .like-review {
@@ -415,46 +463,44 @@ ul.ser-icons li:last-child {
     overflow: hidden;
     border-radius: 100%;
     margin-right: 20px;
+
+     img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
-.auth-profile img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+
 .auth-name {
     font-weight: 800;
 }
-.auth-info .date {
-    font-weight: 500;
-}
-.auth-info .star-rated {
-    margin-left: auto;
+.auth-info{
+
+    .date {
+        font-weight: 500;
+    }
+    .auth-info .star-rated {
+        margin-left: auto;
+    }
 }
 .src-review-cover {
     margin-top: 30px;
 }
-.review-items .rev-subtitle {
-    font-weight: 800;
-}
+
 .review-desc p a {
     font-weight: 800;
     text-decoration: underline;
 }
 .review-items {
     margin-bottom: 30px;
+
+    .rev-subtitle {
+        font-weight: 800;
+    }
 }
 .beach-gallery {
     display: flex;
     flex-flow: wrap;
-}
-.beach-gallery-items img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.5s;
-}
-.beach-gallery-items:hover img {
-    transform: scale(1.15);
 }
 .beach-gallery-items {
     width: calc(25% - 15px);
@@ -464,6 +510,16 @@ ul.ser-icons li:last-child {
     margin-right: 20px;
     margin-top: 20px;
     cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    &:hover img {
+        transform: scale(1.15);
+    }
 }
 .one-by-four .beach-gallery-items:nth-child(4n) {
     margin-right: 0;
@@ -476,63 +532,74 @@ ul.ser-icons li:last-child {
     height: 7.5vw;
     margin-right: 15px;
     margin-top: 20px;
+
+    &:nth-child(5n) {
+        margin-right: 0;
+    }
 }
-.one-by-five .beach-gallery-items:nth-child(5n) {
-    margin-right: 0;
-}
-.beach-info-list ul {
-    padding: 0;
-    margin: 0;
-}
-.beach-info-list li {
-    display: inline-block;
-    margin-right: 15px;
-}
-.beach-info-list .info-title {
-    font-weight: 800;
-    margin-right: 15px;
-}
+
+
 .beach-info-list {
     margin-bottom: 20px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .info-title {
+        font-weight: 800;
+        margin-right: 15px;
+    }
+    span {
+        color: #509edb;
+        font-weight: 500;
+    }
 }
-.beach-info-list > span {
-    color: #509edb;
-    font-weight: 500;
-}
+
 .review-restric{
     position: relative;
+
+    img {
+        height: 22px;
+        width: 22px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 26px;
+        background: #c80000;
+        transform: rotate(45deg);
+        top: 11px;
+        left: -1px;
+        z-index: 1;
+    }
 }
-span.review-restric img {
-    height: 22px;
-    width: 22px;
-}
-.review-restric::before {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 26px;
-    background: #c80000;
-    transform: rotate(45deg);
-    top: 11px;
-    left: -1px;
-    z-index: 1;
-}/*-----------privacy&policy--------*/
+/*-----------privacy&policy--------*/
 .privacy-policy {
    line-height: 1.6;
+
+   .page-heading{
+        text-align: center;
+        padding-left:  0;
+    }
 }
-.privacy-policy .page-heading{
-    text-align: center;
-    padding-left:  0;
-}
+
 .privacy-desc{
     font-size: 16px;
     margin-bottom: 30px;
+
+    ul li {
+        font-size: 16px;
+        color: #333366;
+            padding-bottom: 5px;
+    }
 }
-.privacy-desc ul li {
-    font-size: 16px;
-    color: #333366;
-        padding-bottom: 5px;
-}
+
 span.arrow img {
     width: 20px;
     padding-right: 5px;
@@ -540,9 +607,10 @@ span.arrow img {
 /*-------16/11---------*/
 .privacy-two-sec{
     display: flex;
-}
-.priv-sidebar-left a{
-    display: block;
+
+    li {
+        list-style: disc;
+    }
 }
 .priv-right {
     width: 68%;
@@ -555,13 +623,7 @@ span.arrow img {
 .privacy-policy a{
     text-decoration: underline;
 }
-.privacy-two-sec li {
-    list-style: disc;
-}
-.priv-sidebar-left a{
-    text-decoration: none !important;
-    margin-bottom: 10px;
-}
+
 .thank-mess {
     margin-bottom: 50px;
 }
@@ -570,24 +632,31 @@ span.arrow img {
     overflow: auto;
     height: 100%;
     margin-right: 25px;
-}
-.priv-sidebar-left li {
-   list-style: none;
-       padding-left: 0;
-}
-.priv-sidebar-left .field-border {
-    padding: 25px 25px;
-    margin-bottom: 20px;
-}
-.priv-sidebar-left li:last-child a {
-    margin-bottom: 0;
+
+    li {
+        list-style: none;
+        padding-left: 0;
+
+        &:last-child a {
+            margin-bottom: 0;
+        }
+    }
+    a{
+        display: block;
+        text-decoration: none !important;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    .field-border {
+        padding: 25px 25px;
+        margin-bottom: 20px;
+    }
 }
 .priv-right ul {
     padding-left: 17px;
 }
-.priv-sidebar-left ul li a {
-    font-weight: 400;
-}
+
 
 
 /******edit_profile*********media-query*********/
@@ -613,11 +682,13 @@ span.arrow img {
 .about-descrip {
     width: 36%;
 }
-.contact-frm .submit-btn {
-    width: 110px;
-}
+
 .contact-frm {
     padding: 40px 80px 40px;
+
+    .submit-btn {
+        width: 110px;
+    }
 }
 .write-review .about-para {
     margin: 40px 0;
@@ -684,14 +755,16 @@ span.read-mor {
 .write-review .about-para {
     margin:  40px 0;
 }
-.serch-page-descri .page-heading .beach-name {
-    font-size: 18px;
-}
+
 .star-numb .numb {
     font-size: 14px;
 }
 .serch-page-descri {
     padding-right: 15px;
+
+    .page-heading .beach-name {
+        font-size: 18px;
+    }
 }
 
 /*---13 Sept 2021---*/
@@ -705,12 +778,11 @@ span.read-mor {
 }
 .priv-sidebar-left {
     margin-right: 15px;
-}
-.priv-sidebar-left .field-border {
-    padding: 20px 15px;
-}
 
-
+    .field-border {
+        padding: 20px 15px;
+    }
+}
 }
 /*****************************************/
 @media only screen and (max-width: 1300px){
@@ -720,11 +792,13 @@ span.cam-icon {
 }
 .uploaded-img {
     border-radius: 10px;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
 }
-.uploaded-img img {
-    width: 60px;
-    height: 60px;
-}
+
 .activities-other {
     margin-bottom: 6px;
 }
@@ -758,10 +832,12 @@ span.upload-svg img {
 }
 .write-review-img {
     height: 40vh;
+
+    img {
+        width: 100%;
+    }
 }
-.write-review-img img {
-    width: 100%;
-}
+
 .serch-page {
     margin: 40px 0;
 }
@@ -801,11 +877,13 @@ input.input-field {
 .auth-name {
     font-size: 14px;
 }
-.beach-info-list .info-title {
-    font-size: 14px;
-}
-.beach-info-list > span {
-    font-size: 14px;
+.beach-info-list {
+    .info-title {
+        font-size: 14px;
+    }
+     span {
+        font-size: 14px;
+    }
 }
 .svg-icon img {
     height: 20px;
@@ -890,13 +968,15 @@ span.cam-icon {
 .abt-two-div .about-descrip .page-heading {
     text-align: center;
 }
-.contact-p-img img {
-    width: 100%;
-    float: none;
-}
+
 .contact-p-img {
     width: 90%;
     margin: 0 auto;
+
+    img {
+        width: 100%;
+        float: none;
+    }
 }
 .contact-frm {
     border-radius: 50px;
@@ -904,11 +984,13 @@ span.cam-icon {
 .edit-profile-email {
     font-size: 14px;
 }
-.upload-profile input {
-    width: 70%;
-}
+
 .upload-profile {
     width: 100%;
+
+    input {
+        width: 70%;
+    }
 }
 
 .write-review-form {
@@ -919,10 +1001,12 @@ span.cam-icon {
     width: 30px;
     bottom: 16px;
     right: 60px;
+
+    img {
+        width: 55% !important;
+    }
 }
-.cam-icon img {
-    width: 55% !important;
-}
+
 .write-review-img {
     height: 100%;
 }
@@ -941,11 +1025,11 @@ span.cam-icon {
 }
 .serch-page.view-review-pg .section-heading {
     margin-bottom: 0;
-}
-.serch-page.view-review-pg .section-heading p {
-    margin-bottom: 10px;
-}
 
+     p {
+        margin-bottom: 10px;
+    }
+}
 /*---13 Sept 2021---*/
 .review-des-fiveimgs .fiveimgs {
     width: 60px;
@@ -963,14 +1047,13 @@ span.cam-icon {
 .priv-sidebar-left {
     margin-right: 0;
     width: 100%;
+    position: inherit;
 }
 .priv-right {
     margin-left: 0;
     width: 100%;
 }
-.priv-sidebar-left {
-    position: inherit;
-}
+
 }
 
 /*--------------------------------------*/
@@ -1043,10 +1126,6 @@ span.cam-icon {
 .light-blue-border {
     border: 2px solid #509edb;
 }
-span.cam-icon {
-    bottom: 13px;
-    right: 101px;
-}
 .upload-profile {
     width: 100px;
     margin: 0 auto;
@@ -1091,21 +1170,26 @@ span.upload-svg img {
 .write-review-img {
     width: 100%;
 }
-.review-page .write-review {
-    width: 100%;
-    margin-bottom: 90px !important;
-}
+
 .review-page {
     display: block;
+
+    .write-review {
+        width: 100%;
+        margin-bottom: 90px !important;
+    }
 }
 .my-review-items .review-items {
     padding: 10px;
 }
-.star-wid-loc.d-flex {
-    display: block !important;
-}
-.star-wid-loc .star-numb {
-    margin-left: 0 !important;
+.star-wid-loc {
+
+    .d-flex {
+        display: block !important;
+    }
+    .star-numb {
+        margin-left: 0 !important;
+    }
 }
 .review-items .serch-beach-img {
     width: 50px;
@@ -1125,9 +1209,7 @@ span.upload-svg img {
 .about-img {
     margin-top: 0;
 }
-.auth-info .date {
-    display: block;
-}
+
 .auth-profile {
     height: 45px;
     width: 45px;
@@ -1135,6 +1217,10 @@ span.upload-svg img {
 }
 .auth-info {
     margin-bottom: 8px;
+
+     .date {
+        display: block;
+    }
 }
 .serch-page {
     margin: 30px 0;

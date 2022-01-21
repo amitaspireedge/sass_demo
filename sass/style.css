@@ -1375,11 +1375,11 @@ textarea.field-border {
   .review-options ul li {
     margin-right: 25px;
   }
-  .profile-left img {
-    width: 180px;
-  }
   .profile-left {
     padding-top: 80px;
+  }
+  .profile-left img {
+    width: 180px;
   }
   .page-heading {
     padding-bottom: 30px;
@@ -1409,7 +1409,7 @@ textarea.field-border {
   .field-border {
     padding: 15px;
   }
-  .field-border > .material-icons {
+  .field-border .material-icons {
     font-size: 35px;
   }
   .page-heading span {
@@ -1432,15 +1432,15 @@ textarea.field-border {
     font-size: 14px;
     padding: 7px 50px 7px 20px;
   }
-  .site-logo img {
-    width: 190px;
+  .h-src-inr .src-submit {
+    right: 3px;
+    top: 3px;
   }
   .h-src-inr .src-submit img {
     width: 17px;
   }
-  .h-src-inr .src-submit {
-    right: 3px;
-    top: 3px;
+  .site-logo img {
+    width: 190px;
   }
   .nav-menu {
     width: 200px;
@@ -1448,12 +1448,12 @@ textarea.field-border {
   .f-logo img {
     width: 190px;
   }
-  .f-nav-menu ul li a {
-    font-size: 14px;
-  }
   .f-nav-menu ul li {
     margin-right: 20px;
     padding-right: 20px;
+  }
+  .f-nav-menu ul li a {
+    font-size: 14px;
   }
   .f-copyright {
     font-size: 14px;
@@ -1587,11 +1587,11 @@ textarea.field-border {
   .field-label {
     font-size: 14px;
   }
-  .profile-left img {
-    width: 140px;
-  }
   .profile-left {
     padding-top: 50px;
+  }
+  .profile-left img {
+    width: 140px;
   }
   .review-options {
     padding-bottom: 40px;
@@ -1695,7 +1695,7 @@ textarea.field-border {
   .beach-name {
     font-size: 18px;
   }
-  .activation-message > img {
+  .activation-message img {
     width: 80px;
     margin-bottom: 20px;
   }
@@ -1723,6 +1723,10 @@ textarea.field-border {
     width: 100%;
     text-align: center;
   }
+  .review-options {
+    padding-bottom: 25px;
+    padding-top: 0;
+  }
   .review-options ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1730,7 +1734,7 @@ textarea.field-border {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
   }
-  .review-options ul li {
+  .review-options li {
     margin-right: 20px;
   }
   .write-review-form {
@@ -1747,26 +1751,22 @@ textarea.field-border {
   .star-rated .material-icons {
     font-size: 16px;
   }
-  .review-options {
-    padding-bottom: 25px;
-    padding-top: 0;
-  }
   .container {
     width: 90%;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
-  }
-  .f-nav-menu ul li {
-    margin-right: 0;
-    padding-right: 0;
-    margin: 10px 0;
-    border-right: 0;
   }
   .f-nav-menu ul {
     display: block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .f-nav-menu ul li {
+    margin-right: 0;
+    padding-right: 0;
+    margin: 10px 0;
+    border-right: 0;
   }
   .f-social {
     padding: 20px 0;
@@ -1801,15 +1801,15 @@ textarea.field-border {
   .select-opt {
     margin: 5px 0;
   }
-  .more-descr .submit-btn {
-    font-size: 14px;
-    margin-top: 10px;
-  }
   .more-descr {
     margin-bottom: 20px;
     padding-bottom: 15px;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
+  }
+  .more-descr .submit-btn {
+    font-size: 14px;
+    margin-top: 10px;
   }
   .save-review .form-group label {
     width: 100%;
@@ -1852,12 +1852,12 @@ textarea.field-border {
     font-size: 18px;
     display: inline-block !important;
   }
+  .beach-desc {
+    text-align: center;
+  }
   .beach-desc .star-rated {
     margin-top: 5px;
     display: inline-block;
-  }
-  .beach-desc {
-    text-align: center;
   }
   .src-filter a.btn {
     padding: 0;
@@ -1867,12 +1867,12 @@ textarea.field-border {
     margin-top: 14px;
     left: -10px !important;
   }
+  .filtr-drop a {
+    font-size: 13px;
+  }
   .h-src-inr .src-submit {
     right: 9px;
     top: 6px;
-  }
-  .filtr-drop a {
-    font-size: 13px;
   }
   .section-heading {
     margin-bottom: 20px;
@@ -1883,13 +1883,13 @@ textarea.field-border {
   .hero-section .h-src-inr input {
     padding: 12px 20px 12px 20px;
   }
-  .login-register .modal-dialog .modal-content {
-    padding: 20px;
-  }
   .login-register .modal-dialog {
     max-width: 93%;
     width: 93%;
     margin: 0 auto;
+  }
+  .login-register .modal-dialog .modal-content {
+    padding: 20px;
   }
   .reg-form-cover .field-border {
     font-size: 14px;
@@ -1900,13 +1900,7 @@ textarea.field-border {
     height: 30px;
     width: 30px;
   }
-  .reg-check-box label::after {
-    left: 5px;
-  }
   .reg-check-box label {
-    font-size: 14px;
-  }
-  .ac-cta-link a {
     font-size: 14px;
   }
   .reg-check-box label::before {
@@ -1918,6 +1912,10 @@ textarea.field-border {
     top: 8px;
     height: 12px;
     width: 12px;
+    left: 5px;
+  }
+  .ac-cta-link a {
+    font-size: 14px;
   }
   .submit-btn {
     font-size: 14px;
@@ -1941,12 +1939,12 @@ textarea.field-border {
   .activation-message p br {
     display: none;
   }
+  .back-to-home {
+    margin-top: 25px;
+  }
   .back-to-home img {
     width: 22px;
     margin: 0 8px 0 0;
-  }
-  .back-to-home {
-    margin-top: 25px;
   }
   .reset-pwd-inner {
     width: 90%;
