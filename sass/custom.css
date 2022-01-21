@@ -379,6 +379,7 @@ span.cam-icon img {
 
 .serch-beach-icons {
   width: calc(100% - 100px);
+  padding-left: 15px;
 }
 
 .serch-page-img {
@@ -621,6 +622,31 @@ ul.ser-icons li:last-child {
 
 .one-by-five .beach-gallery-items:nth-child(5n) {
   margin-right: 0;
+}
+
+.my-review-items .review-items {
+  background: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.my-review-items .review-items .serch-page-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+  border-top: 1px solid #ddd !important;
+  padding-top: 20px;
+}
+
+.del-rev button {
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .beach-info-list {

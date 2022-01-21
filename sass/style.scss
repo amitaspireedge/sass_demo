@@ -3,8 +3,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import "variables";
  
+
+
+$primary-color:#333366;
+$secondary-color:#509edb;
+
+@mixin robo-family {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin dis-prop{
+    display: flex;
+}
+@mixin shadow-box{
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+@mixin colr-whit{
+    background: #fff;
+}
+@mixin widt{
+    width: 100%;
+}
+
+
 body {
-   font-family: 'Roboto', sans-serif;
+    @include robo-family;
 	line-height: 1.5; 
 	color: $primary-color;
 }
@@ -40,16 +62,17 @@ input::placeholder, textarea::placeholder {
     width: 260px;
 }
 .h-src-inr {
-    display: flex;
+    @include dis-prop;
     position: relative;
+
     input {
         border: 1px solid $primary-color;
         padding: 12px 60px 12px 20px;
         border-radius: 60px;
-        width: 100%;
+        @include widt;
         font-size: 16px;
         color: $primary-color;
-        box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+        @include shadow-box;
     }
     .src-submit {
         position: absolute;
@@ -63,7 +86,7 @@ input::placeholder, textarea::placeholder {
     }
 }
 .header-right {
-    display: flex;
+    @include dis-prop;
     align-items: center;
     justify-content: flex-end;
 }
@@ -74,7 +97,7 @@ input::placeholder, textarea::placeholder {
 }
 .toggle {
     div {
-        width: 100%;
+        @include widt;
         height: 2px;
         background: $primary-color;
         transition: all 0.3s;
@@ -106,17 +129,17 @@ input::placeholder, textarea::placeholder {
     }
 }
 .nav-toggle-cover {
-    display: flex;
+    @include dis-prop;
     align-items: center;
-    background: #fff;
+   @include colr-whit;
     border-radius: 50px;
     padding: 4px 8px 4px 12px;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    @include shadow-box;
 }
 /*----Write Review----*/
 .review-options {
     ul {
-        display: flex;
+        @include dis-prop;
         align-items: center;
         list-style: none;
         padding: 0;
@@ -171,9 +194,9 @@ input::placeholder, textarea::placeholder {
 .field-border {
     padding: 15px 35px;
     border: 1px solid $primary-color;
-    width: 100%;
+    @include widt;
     border-radius: 40px;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    @include shadow-box;
     font-size: 16px;
     font-weight: 500;
     color: $primary-color;
@@ -193,7 +216,7 @@ input::placeholder, textarea::placeholder {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
-    display: flex;
+    @include dis-prop;
     align-items: flex-start;
 }
 .field-cover {
@@ -203,7 +226,7 @@ input::placeholder, textarea::placeholder {
     width: 30px;
     height: 30px;
     background-color: $secondary-color;
-    display: flex;
+    @include dis-prop;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -223,7 +246,7 @@ textarea.field-border {
 }
 
 .check-multiple {
-    display: flex;
+    @include dis-prop;
     flex-flow: wrap;
      padding: 30px 30px 0;
    
@@ -241,7 +264,7 @@ textarea.field-border {
 .custom-checkbox label {
     cursor: pointer;
     margin-bottom: 0;
-    display: flex;
+    @include dis-prop;
     align-items: center;
     &:hover {
         color: $secondary-color;
@@ -286,7 +309,7 @@ textarea.field-border {
     }
 }
 .facility-sec{
-    display: flex;
+    @include dis-prop;
     flex-flow: wrap;
     justify-content: space-between;
     padding: 30px 30px 0;
@@ -299,7 +322,7 @@ textarea.field-border {
     margin-right: 10px;
 }
 .multiple-opt {
-    display: flex;
+    @include dis-prop;
     justify-content: space-between;
 
     li {
@@ -323,7 +346,7 @@ textarea.field-border {
     font-size: 16px;
     font-weight: 900;
     color: #fff !important;
-    display: flex;
+    @include dis-prop;
     align-items: center;
     background-color: $secondary-color;
     padding: 15px 10px 15px;
@@ -381,7 +404,7 @@ textarea.field-border {
         cursor: pointer;
         font-size: 16px;
         font-weight: 500;
-        display: flex;
+        @include dis-prop;
         width: 470px;
         align-items: center;
         line-height: 1.2;
@@ -391,7 +414,7 @@ textarea.field-border {
             -webkit-appearance: none;
             background-color: transparent;
             border: 2px solid $primary-color;
-            box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+            @include shadow-box;
             padding: 15px;
             display: inline-block;
             position: relative;
@@ -460,7 +483,7 @@ textarea.field-border {
         margin: 0;
         list-style: none;
         padding: 0;
-        display: flex;
+        @include dis-prop;
         justify-content: center;
    
     li {
@@ -507,14 +530,14 @@ textarea.field-border {
 /*-----Home page-----*/
 .header-transparent {
     position: absolute;
-    width: 100%;
+    @include widt;
     background: transparent;
     top: 0;
     z-index: 1;
 }
 .hero-inner {
     height: 94vh;
-    display: flex;
+    @include dis-prop;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -532,7 +555,7 @@ textarea.field-border {
     }
 }
 .background-video {
-    width: 100%;
+    @include widt;
     object-fit: cover;
     object-position: center;
     position: absolute;
@@ -555,7 +578,7 @@ textarea.field-border {
     width: 90%;
 }
 .review-cover {
-    display: flex;
+    @include dis-prop;
 }
 .review-item {
     width: calc(25% - 30px);
@@ -577,7 +600,7 @@ textarea.field-border {
     margin-bottom: 15px;
 
     img {
-        width: 100%;
+        @include widt;
         object-fit: cover;
         height: 100%;
         transition: 0.5s;
@@ -596,7 +619,7 @@ textarea.field-border {
     margin-top: 5px;
 }
 .beach-desc {
-    display: flex;
+    @include dis-prop;
     align-items: flex-end;
     justify-content: space-between;
 }
@@ -620,8 +643,8 @@ textarea.field-border {
     width: 650px;
 
     .modal-content {
-        width: 100%;
-        background: #fff;
+        @include widt;
+       @include colr-whit;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
         padding: 35px;
         position: relative;
@@ -644,7 +667,7 @@ textarea.field-border {
 }
 
 .reg-pop-footer {
-    display: flex;
+    @include dis-prop;
     align-items: center;
     justify-content: space-between;
 }
@@ -657,7 +680,7 @@ textarea.field-border {
     }
 }
 .reg-check-box {
-    display: flex;
+    @include dis-prop;
     align-items: center;
     font-weight: 500;
     margin-bottom: 20px;
@@ -717,7 +740,7 @@ textarea.field-border {
     width: 38px;
     padding: 8px;
     border-radius: 50px;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    @include shadow-box;
 }
 .forgot-pass {
     margin-left: auto;
@@ -730,7 +753,7 @@ textarea.field-border {
 .nav-menu {
     position: absolute;
     width: 300px;
-    background: #fff;
+   @include colr-whit;
     right: 0;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     padding: 15px 20px;
@@ -779,8 +802,8 @@ textarea.field-border {
     }
 }
 .filtr-drop{
-   width: 100%;
-    background: #fff;
+   @include widt;
+   @include colr-whit;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     padding: 15px 20px;
     border-radius: 15px;
@@ -821,12 +844,12 @@ textarea.field-border {
     margin-bottom: 25px;
    
     img {
-        width: 100%;
+        @include widt;
         display: block;
     }
 }
 .two-col-advt {
-    display: flex;
+    @include dis-prop;
     justify-content: space-between;
     margin-bottom: 25px;
 }
@@ -834,7 +857,7 @@ textarea.field-border {
     width: 48%;
     
     img {
-        width: 100%;
+        @include widt;
     }
 }
 .ad-container {
@@ -842,14 +865,14 @@ textarea.field-border {
     margin: 0 auto;
 }
 .side-ad-banner {
-    display: flex;
+    @include dis-prop;
     justify-content: space-between;
 }
 .side-banner {
     width: 9%;
 
     img {
-        width: 100%;
+        @include widt;
     }
 }
 
@@ -900,7 +923,7 @@ textarea.field-border {
 
     form {
         display: inline-block;
-        width: 100%;
+        @include widt;
 
         a.submit-btn {
             display: inline-block;
@@ -1399,7 +1422,7 @@ textarea.field-border {
     width: 25px;
 }
 .toggle div {
-    width: 100%;
+    @include widt;
     height: 2px;
 }
 .toggle {
@@ -1558,10 +1581,10 @@ section.latest-review.mt-5 {
 @media only screen and (max-width: 500px){
 
 .container-right {
-    width: 100%;
+    @include widt;
 }
 .container-left {
-    width: 100%;
+    @include widt;
     text-align: center;
 }
 .review-options {
@@ -1577,10 +1600,10 @@ section.latest-review.mt-5 {
     }
 }
 .write-review-form {
-    width: 100%;
+    @include widt;
 
     form {
-        width: 100%;
+        @include widt;
     }
 }
 .container-fluid {
@@ -1618,14 +1641,14 @@ section.latest-review.mt-5 {
     margin-right: 20px;
 }
 .facility-wdth {
-    width: 100%;
+    @include widt;
 }
 .facility-sec .field-cover.activities-other {
     margin-top: -8px;
-    width: 100%;
+    @include widt;
 }
 .multiple-opt {
-   display: flex;
+   @include dis-prop;
     flex-flow: wrap;
     justify-content: center;
 
@@ -1649,7 +1672,7 @@ section.latest-review.mt-5 {
     
 }
 .save-review .form-group label {
-    width: 100%;
+    @include widt;
 }
 .accept-cb {
     flex-flow: wrap;
@@ -1661,7 +1684,7 @@ section.latest-review.mt-5 {
     display: block;
           
     li {
-        width: 100%;
+        @include widt;
     }
 }
 .review-item {
@@ -1670,7 +1693,7 @@ section.latest-review.mt-5 {
     margin-bottom: 15px;
 }
 .review-cover {
-    display: flex;
+    @include dis-prop;
     flex-flow: wrap;
     justify-content: space-between;
 }

@@ -1,11 +1,15 @@
 
+@mixin dis-prop{
+    display: flex;
+}
+
 
 /*-------step-2-page-------*/
 .radio .svg-icon img {
     height: 60px;
 }
 .radio-btn {
-    display: flex;
+    @include dis-prop;
     align-items: center;
     margin-top: 7px;
     justify-content: space-between;
@@ -55,7 +59,7 @@
     margin-left: auto;
 }
 .pictures-upload-sec{
-    display: flex;
+    @include dis-prop;
     justify-content: space-between;
     align-items: center;
     padding: 5px 0;
@@ -194,7 +198,7 @@ span.cam-icon {
     height: 35px;
     width: 35px;
     border-radius: 100%;
-    display: flex;
+    @include dis-prop;
     align-items: center;
     justify-content: center;
     bottom: 23px;
@@ -222,7 +226,7 @@ span.cam-icon {
     margin-left: auto;
 }
 .abt-two-div {
-    display: flex;
+    @include dis-prop;
     align-items: center;
 }
 .abt-two-div .about-descrip .page-heading {
@@ -300,7 +304,7 @@ span.cam-icon {
 
 /*-----------no_review_page--------------*/
 .review-page{
-    display: flex;
+    @include dis-prop;
     align-items: center;
     justify-content: space-between;
 
@@ -330,6 +334,7 @@ span.cam-icon {
 }
 .serch-beach-icons {
     width: calc(100% - 100px);
+    padding-left: 15px;
 }
 .serch-page-img {
     padding-left: 50px;
@@ -388,7 +393,7 @@ span.cam-icon {
 
 .serch-beach{
     margin-top:15px;
-    display: flex;
+    @include dis-prop;
    align-items: flex-start;
 }
 .serch-beach-icons .custom-checkbox {
@@ -396,7 +401,7 @@ span.cam-icon {
 }
 .ser-icons {
     list-style: none;
-    display: flex;
+    @include dis-prop;
     padding: 0;
     flex-flow: wrap;
     margin-bottom: 0;
@@ -454,7 +459,7 @@ ul.ser-icons li:last-child {
     line-height: 1;
 }
 .auth-info {
-    display: flex;
+    @include dis-prop;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -500,7 +505,7 @@ ul.ser-icons li:last-child {
     }
 }
 .beach-gallery {
-    display: flex;
+    @include dis-prop;
     flex-flow: wrap;
 }
 .beach-gallery-items {
@@ -538,7 +543,25 @@ ul.ser-icons li:last-child {
         margin-right: 0;
     }
 }
+.my-review-items .review-items {
+    background: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
 
+    .serch-page-details {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        border-top: 1px solid #ddd !important;
+        padding-top: 20px;
+    }
+}
+.del-rev button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
 
 .beach-info-list {
     margin-bottom: 20px;
@@ -607,7 +630,7 @@ span.arrow img {
 }
 /*-------16/11---------*/
 .privacy-two-sec{
-    display: flex;
+    @include dis-prop;
 
     li {
         list-style: disc;
@@ -1143,7 +1166,7 @@ span.upload-svg img {
     height: 52px;
 }
 .check-multiple.radio {
-    display: flex;
+    @include dis-prop;
 }
 .field-cover.other {
     width: 100%;
