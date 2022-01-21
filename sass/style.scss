@@ -1096,12 +1096,16 @@ textarea.field-border {
 
 /*---------Write Review----------*/
 
-.h-src-inr input {
-    font-size: 16px;
+.h-src-inr {
+
+    input {
+        font-size: 16px;
+    }
+    .src-submit img {
+        width: 20px;
+    }
 }
-.h-src-inr .src-submit img {
-    width: 20px;
-}
+
 .container-right {
     margin-bottom: 80px;
 }
@@ -1118,15 +1122,19 @@ textarea.field-border {
 .field-border > .material-icons {
     font-size: 35px;
 }
-.save-review .form-group label:before {
-    padding: 13px;
+.save-review {
+
+    .form-group label:before {
+        padding: 13px;
+    }
+    .form-group input:checked + label:after {
+        top: 7px;
+        left: 12px;
+        width: 7px;
+        height: 17px;
+    }
 }
-.save-review .form-group input:checked + label:after {
-    top: 7px;
-    left: 12px;
-    width: 7px;
-    height: 17px;
-}
+
 .beach-name {
     font-size: 20px;
 }
