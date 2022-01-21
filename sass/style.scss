@@ -1,12 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('all-mixins.scss');
 
 $primary-color:#333366;
 $secondary-color:#509edb;
 
+
 body {
-	font-family: 'Roboto', sans-serif;;
+    @include robotofonts;
 	line-height: 1.5; 
 	color: $primary-color;
 }
@@ -1779,7 +1781,6 @@ section.hero-section {
 .side-banner {
     width: 14%;
 }
-
 
 .activation-message p br {
     display: none;
