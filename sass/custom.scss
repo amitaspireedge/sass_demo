@@ -114,7 +114,7 @@ a.submit-btn.back {
 /*-------edit-profile-------*/
 
 .edit-profile-email{
-   font-size: 16px;
+   font-size: $sixtn-font;
     font-weight: 500;
     margin: 35px 0;
 
@@ -130,10 +130,10 @@ input.input-field{
     border: none;
     @include widt;
     padding: 0;
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 textarea#fname {
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 .edit-form-sub-headings{
     font-size: 26px;
@@ -256,7 +256,7 @@ span.cam-icon {
 }
 
 .about-para p{
-    font-size: 16px;
+    font-size: $sixtn-font;
         text-align: justify;
 }
 /*--------contact-us----------------*/
@@ -374,7 +374,7 @@ span.cam-icon {
 .star-numb{
 
     .numb{
-        font-size: 16px;
+        font-size: $sixtn-font;
         font-weight: 500;
         margin-left: 20px;
     }
@@ -424,7 +424,7 @@ span.cam-icon {
 span.read-mor {
     float: right;
     margin-left: auto;
-    font-size: 16px;
+    font-size: $sixtn-font;
     text-decoration: underline;
     margin-top: -8px;
     font-weight: 500;
@@ -623,11 +623,11 @@ ul.ser-icons li:last-child {
 }
 
 .privacy-desc{
-    font-size: 16px;
+    font-size: $sixtn-font;
     margin-bottom: 30px;
 
     ul li {
-        font-size: 16px;
+        font-size: $sixtn-font;
         color: $primary-color;
             padding-bottom: 5px;
     }
@@ -745,7 +745,7 @@ span.read-mor {
     margin-top: 0;
 }
 .star-numb .numb {
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 .serch-page-details {
     margin: 15px 0 0 0;
@@ -768,7 +768,7 @@ span.read-mor {
     font-size: 15px;
 }
 .review-list-title {
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 
 /*---13 Sept 2021---*/
@@ -896,7 +896,7 @@ input.input-field {
     margin-top: 15px;
 }
 .serch-page-descri .page-heading .beach-name {
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 .star-numb .star-rated .material-icons {
     font-size: 18px;

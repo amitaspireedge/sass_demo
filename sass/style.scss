@@ -50,7 +50,7 @@ input::placeholder, textarea::placeholder {
         padding: 12px 60px 12px 20px;
         border-radius: 60px;
         @include widt;
-        font-size: 16px;
+        font-size: $sixtn-font;
         color: $primary-color;
         @include shadow-box;
     }
@@ -161,7 +161,7 @@ input::placeholder, textarea::placeholder {
     padding-left: 35px;
 
     span {
-    font-size: 16px;
+    font-size: $sixtn-font;
     font-weight: 500;
     }
 }
@@ -178,7 +178,7 @@ input::placeholder, textarea::placeholder {
     @include widt;
     border-radius: 40px;
     @include shadow-box;
-    font-size: 16px;
+    font-size: $sixtn-font;
     font-weight: 500;
     color: $primary-color;
 
@@ -194,7 +194,7 @@ input::placeholder, textarea::placeholder {
 
 
 .field-label {
-    font-size: 16px;
+    font-size: $sixtn-font;
     font-weight: 500;
     margin-bottom: 10px;
     @include dis-prop;
@@ -324,7 +324,7 @@ textarea.field-border {
     }
 }
 .submit-btn {
-    font-size: 16px;
+    font-size: $sixtn-font;
     font-weight: 900;
     color:$whit-color !important;
     @include dis-prop;
@@ -348,7 +348,7 @@ textarea.field-border {
         position: relative;
         top: -1px;
         right: -8px;
-        font-size: 16px;
+        font-size: $sixtn-font;
     }
 }
 
@@ -361,7 +361,7 @@ textarea.field-border {
     padding-bottom: 30px;
 
     p {
-        font-size: 16px;
+        font-size: $sixtn-font;
         font-weight: 500;
         width: 470px;
         line-height: 1.3;
@@ -376,14 +376,14 @@ textarea.field-border {
 
 .save-review{
      p {
-        font-size: 16px;
+        font-size: $sixtn-font;
         color: $primary-color;
         font-weight: 500;
     }
     .form-group label {
         position: relative;
         cursor: pointer;
-        font-size: 16px;
+        font-size: $sixtn-font;
         font-weight: 500;
         @include dis-prop;
         width: 470px;
@@ -474,7 +474,7 @@ textarea.field-border {
         line-height: 1;
 
         li a {
-            font-size: 16px;
+            font-size: $sixtn-font;
             font-weight: 500;
         }
     }
@@ -490,7 +490,7 @@ textarea.field-border {
 
 
 .f-copyright {
-    font-size: 16px;
+    font-size: $sixtn-font;
     font-weight: 500;
     margin-top: 25px;
 }
@@ -594,7 +594,7 @@ textarea.field-border {
     font-weight: bold;
 }
 .beach-location {
-    font-size: 16px;
+    font-size: $sixtn-font;
     font-weight: 500;
     line-height: 1;
     margin-top: 5px;
@@ -750,7 +750,7 @@ textarea.field-border {
         list-style: none;
     
         a {
-            font-size: 16px;
+            font-size: $sixtn-font;
             line-height: 1;
             margin: 10px 0;
             display: inline-block;
@@ -792,7 +792,7 @@ textarea.field-border {
     border: 0;
  
     a{
-        font-size: 16px;
+        font-size: $sixtn-font;
         line-height: 1;
         margin: 10px 0;
         display: inline-block;
@@ -963,7 +963,7 @@ textarea.field-border {
      margin-right: 40px;
     }
     a {
-        font-size: 16px;
+        font-size: $sixtn-font;
     }
 }
 
@@ -1039,7 +1039,7 @@ textarea.field-border {
 }
 
 .submit-btn .material-icons {
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 .f-nav-menu ul li a {
     font-size: 15px;
@@ -1048,7 +1048,7 @@ textarea.field-border {
     font-size: 15px;
 }
 .nav-menu ul.menu a {
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 }
 
@@ -1062,7 +1062,7 @@ textarea.field-border {
 .hero-section .h-src-inr{
 
     input {
-        font-size: 16px;
+        font-size: $sixtn-font;
         padding: 13px 50px 13px 40px;
     }
     .src-submit {
@@ -1101,7 +1101,7 @@ textarea.field-border {
 .h-src-inr {
 
     input {
-        font-size: 16px;
+        font-size: $sixtn-font;
     }
     .src-submit img {
         width: 20px;
@@ -1161,7 +1161,7 @@ textarea.field-border {
     font-size: 18px;
 }
 .hero-section .h-src-inr input {
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 .reg-form-cover .field-border {
     font-size: 18px;
@@ -1314,7 +1314,7 @@ textarea.field-border {
     width: 80%;
 }
 .review-options .material-icons {
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 .section-heading {
     font-size: 22px;
@@ -1340,7 +1340,7 @@ textarea.field-border {
     font-size: 14px;
 }
 .hero-src-cover label {
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 .hero-section .h-src-inr input {
     font-size: 15px;
@@ -1543,7 +1543,7 @@ section.latest-review.mt-5 {
         margin-bottom: 20px;
     }
      p {
-        font-size: 16px;
+        font-size: $sixtn-font;
     }
     .submit-btn {
         margin-top: 22px;
@@ -1594,7 +1594,7 @@ section.latest-review.mt-5 {
 }
 
 .star-rated .material-icons {
-    font-size: 16px;
+    font-size: $sixtn-font;
 }
 .container {
     width: 90%;
