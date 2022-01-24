@@ -610,7 +610,7 @@ textarea.field-border {
     font-size: 20px;
 }
 .section-heading {
-    font-size: 40px;
+    $sec-heading-font;
     margin-bottom: 35px;
     font-family: 'Kaushan Script', cursive;
     line-height: 1;
@@ -979,7 +979,7 @@ textarea.field-border {
     font-size: 15px;
 
     .material-icons {
-        font-size: 40px;
+        $sec-heading-font;
     }
 }
 .hero-src-cover {
