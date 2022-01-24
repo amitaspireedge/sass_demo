@@ -3,21 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import "variables";
 
-@mixin robo-family {
-    font-family: 'Roboto', sans-serif;
-}
-@mixin dis-prop{
-    display: flex;
-}
-@mixin shadow-box{
-    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-}
-@mixin colr-whit{
-    background: #fff;
-}
-@mixin widt{
-    width: 100%;
-}
 
 
 body {
@@ -126,7 +111,7 @@ input::placeholder, textarea::placeholder {
 .nav-toggle-cover {
     @include dis-prop;
     align-items: center;
-   @include colr-whit;
+   background:$whit-color;
     border-radius: 50px;
     padding: 4px 8px 4px 12px;
     @include shadow-box;
@@ -142,7 +127,7 @@ input::placeholder, textarea::placeholder {
         margin: 15px 0 0;
         li {
             margin-right: 50px;
-            
+
             &:last-child {
                 margin-right:0 
             }
@@ -203,7 +188,7 @@ input::placeholder, textarea::placeholder {
         font-weight: 400;
     }
     .material-icons.fill {
-        color: #ffcc00;
+        color: $yellow-color;
     }
 }
 
@@ -225,7 +210,7 @@ input::placeholder, textarea::placeholder {
     @include dis-prop;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color:$whit-color;
     border-radius: 100%;
     margin-right: 12px;
     font-size: 15px;
@@ -341,7 +326,7 @@ textarea.field-border {
 .submit-btn {
     font-size: 16px;
     font-weight: 900;
-    color: #fff !important;
+    color:$whit-color !important;
     @include dis-prop;
     align-items: center;
     background-color: $secondary-color;
@@ -545,7 +530,7 @@ textarea.field-border {
     label {
         font-size: 22px;
         font-weight: 500;
-        color: #fff;
+        color:$whit-color;
         padding-left: 40px;
         margin-bottom: 20px;
     }
@@ -620,7 +605,7 @@ textarea.field-border {
     justify-content: space-between;
 }
 .star-rated .material-icons {
-    color: #ffcc00;
+    color: $yellow-color;
     float: left;
     font-size: 20px;
 }
@@ -640,7 +625,7 @@ textarea.field-border {
 
     .modal-content {
         @include widt;
-       @include colr-whit;
+       background:$whit-color;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
         padding: 35px;
         position: relative;
@@ -731,7 +716,7 @@ textarea.field-border {
     top: 30px;
     right: 30px;
     cursor: pointer;
-    background: #ffffff;
+    background:$whit-color;
     height: 38px;
     width: 38px;
     padding: 8px;
@@ -749,7 +734,7 @@ textarea.field-border {
 .nav-menu {
     position: absolute;
     width: 300px;
-   @include colr-whit;
+   background:$whit-color;
     right: 0;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     padding: 15px 20px;
@@ -799,7 +784,7 @@ textarea.field-border {
 }
 .filtr-drop{
    @include widt;
-   @include colr-whit;
+   background:$whit-color;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     padding: 15px 20px;
     border-radius: 15px;

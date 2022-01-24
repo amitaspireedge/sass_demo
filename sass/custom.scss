@@ -1,7 +1,6 @@
+@import "variables";
 
-@mixin dis-prop{
-    display: flex;
-}
+
 
 
 /*-------step-2-page-------*/
@@ -16,7 +15,7 @@
 }
 
 .temp-img img{
-    width: 100%;
+    @include widt;
     margin-top: 10px;
 }
 .check-multiple.radio {
@@ -32,7 +31,7 @@
 }
 .radio-check-box {
     &:hover {
-        color: #509edb;
+        color: $secondary-color;
     }
 
     label {
@@ -44,7 +43,7 @@
         display: none;
 
         &:checked ~ label{
-            color: #509edb;
+            color: $secondary-color;
         }
     }
 }
@@ -75,13 +74,13 @@
     position: relative;
    
     label{
-        color: #333366;
+        color: $primary-color;
         cursor: pointer;
         margin-bottom: 0;
     }
     input {
         position: absolute;
-        width: 100%;
+        @include widt;
         cursor: pointer;
         height: 100%;
     }
@@ -129,7 +128,7 @@ a.submit-btn.back {
 }
 input.input-field{
     border: none;
-    width: 100%;
+    @include widt;
     padding: 0;
     font-size: 16px;
 }
@@ -161,10 +160,15 @@ textarea#fname {
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
-    background: #333366;
+    background: $primary-color;
     border-radius: 20px;
     padding: 5px;
-    color: white;
+    color: $whit-color;
+
+
+
+
+
 }
 .profile-left-camera{ 
 
@@ -186,7 +190,7 @@ textarea#fname {
         position: absolute;
         top: 0;
         height: 100%;
-        width: 100%;
+        @include widt;
         opacity: 0;
         cursor: pointer;
     }
@@ -194,7 +198,7 @@ textarea#fname {
 
 span.cam-icon {
     position: absolute;
-    background: #333366;
+    background: $primary-color;
     height: 35px;
     width: 35px;
     border-radius: 100%;
@@ -211,13 +215,13 @@ span.cam-icon {
 }
 
 .profile-left > span {
-    color: #509edb;
+    color: $secondary-color;
     font-weight: 500;
     font-size: 21px;
 }
 /*-------about-us-------*/
 .about-page {
-    width: 100%;
+    @include widt;
     margin-top: 70px;
     margin-bottom: 70px;
 }
@@ -238,7 +242,7 @@ span.cam-icon {
     margin-left: auto;
 
     img {
-        width: 100%;
+        @include widt;
         height: 70vh;
         object-fit: cover;
         border-radius: 50px 0 0 50px;
@@ -257,7 +261,7 @@ span.cam-icon {
 }
 /*--------contact-us----------------*/
 .light-blue-border {
-    border: 3px solid #509edb;
+    border: 3px solid $secondary-color;
 
     textarea {
         border: none;
@@ -265,7 +269,7 @@ span.cam-icon {
         height: 150px;
         padding: 0;
         resize: none;
-        width: 100%;
+        @include widt;
     }
 
     &::input-placeholder{
@@ -276,7 +280,12 @@ span.cam-icon {
     -webkit-box-shadow: 0px 8px 10px 4px #00000038;
     box-shadow: 0px 8px 10px 4px #00000038;
     padding:40px 100px 40px;
-    background: white;
+    background: $whit-color;
+
+
+
+
+
     border-radius: 50px 0 0 50px;
         
     .submit-btn{
@@ -340,7 +349,7 @@ span.cam-icon {
     padding-left: 50px;
 
     .location-map img {
-        width: 100%;
+        @include widt;
         object-fit: cover;
         overflow: hidden;
         border-radius: 25px;
@@ -380,7 +389,7 @@ span.cam-icon {
     overflow: hidden;
 
      img {
-        width: 100%;
+        @include widt;
         height: 100%;
         object-fit: cover;
     }
@@ -430,7 +439,7 @@ ul.ser-icons li:last-child {
 }
 .serch-page-details {
     margin: 20px 0 0 0;
-    border-bottom: 1px solid #509edb;
+    border-bottom: 1px solid $secondary-color;
     padding-bottom: 25px;
 
     &:nth-child(7){
@@ -447,14 +456,14 @@ ul.ser-icons li:last-child {
     float: left;
 }
 .src-review-list {
-    border-top: 1px solid #509edb;
+    border-top: 1px solid $secondary-color;
     margin-top: 30px;
     padding-top: 25px;
     display: inline-block;
-    width: 100%;
+    @include widt;
 }
 .review-list-title {
-    color: #509edb;
+    color: $secondary-color;
     font-size: 18px;
     line-height: 1;
 }
@@ -472,7 +481,7 @@ ul.ser-icons li:last-child {
 
      img {
         height: 100%;
-        width: 100%;
+        @include widt;
         object-fit: cover;
     }
 }
@@ -518,7 +527,7 @@ ul.ser-icons li:last-child {
     cursor: pointer;
 
     img {
-        width: 100%;
+        @include widt;
         height: 100%;
         object-fit: cover;
         transition: 0.5s;
@@ -579,7 +588,7 @@ ul.ser-icons li:last-child {
         margin-right: 15px;
     }
     span {
-        color: #509edb;
+        color: $secondary-color;
         font-weight: 500;
     }
 }
@@ -619,7 +628,7 @@ ul.ser-icons li:last-child {
 
     ul li {
         font-size: 16px;
-        color: #333366;
+        color: $primary-color;
             padding-bottom: 5px;
     }
 }
@@ -858,7 +867,7 @@ span.upload-svg img {
     height: 40vh;
 
     img {
-        width: 100%;
+        @include widt;
     }
 }
 
@@ -981,11 +990,11 @@ span.cam-icon {
     height: auto;
 }
 .about-descrip {
-    width: 100%;
+    @include widt;
     margin-left: unset;
 }
 .about-img {
-    width: 100%;
+    @include widt;
     margin-left: unset;
     margin-top: 30px;
 }
@@ -998,7 +1007,7 @@ span.cam-icon {
     margin: 0 auto;
 
     img {
-        width: 100%;
+        @include widt;
         float: none;
     }
 }
@@ -1010,7 +1019,7 @@ span.cam-icon {
 }
 
 .upload-profile {
-    width: 100%;
+    @include widt;
 
     input {
         width: 70%;
@@ -1018,7 +1027,7 @@ span.cam-icon {
 }
 
 .write-review-form {
-    width: 100%;
+    @include widt;
 }
 span.cam-icon {
     height: 30px;
@@ -1070,12 +1079,12 @@ span.cam-icon {
 }
 .priv-sidebar-left {
     margin-right: 0;
-    width: 100%;
+    @include widt;
     position: inherit;
 }
 .priv-right {
     margin-left: 0;
-    width: 100%;
+    @include widt;
 }
 
 }
@@ -1101,7 +1110,7 @@ span.cam-icon {
     margin-top: 15px;
 }
 .upload-profile input {
-    width: 100%;
+    @include widt;
 }
 .one-by-five .beach-gallery-items {
     width: calc(20% - 8px);
@@ -1148,7 +1157,7 @@ span.cam-icon {
         padding: 20px;
 }
 .light-blue-border {
-    border: 2px solid #509edb;
+    border: 2px solid $secondary-color;
 }
 .upload-profile {
     width: 100px;
@@ -1159,7 +1168,7 @@ span.cam-icon {
     right: 0px;
 }
 .activities-other {
-    width: 100%;
+    @include widt;
 }
 span.upload-svg img {
     width: 85px;
@@ -1169,7 +1178,7 @@ span.upload-svg img {
     @include dis-prop;
 }
 .field-cover.other {
-    width: 100%;
+    @include widt;
 }
 .src-filter {
     padding: 10px;
@@ -1192,14 +1201,14 @@ span.upload-svg img {
     font-size: 14px; 
 }
 .write-review-img {
-    width: 100%;
+    @include widt;
 }
 
 .review-page {
     display: block;
 
     .write-review {
-        width: 100%;
+        @include widt;
         margin-bottom: 90px !important;
     }
 }

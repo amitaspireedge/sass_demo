@@ -2,3 +2,21 @@
 
 $primary-color:#333366;
 $secondary-color:#509edb;
+$whit-color:  #fff;
+$yellow-color : #ffcc00;
+
+@mixin robo-family {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin dis-prop{
+    display: flex;
+}
+@mixin shadow-box{
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+// @mixin colr-whit{
+//     background: #fff;
+// }
+@mixin widt{
+    width: 100%;
+}
