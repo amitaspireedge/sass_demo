@@ -777,7 +777,7 @@ textarea.field-border {
 .section-heading {
   font-size: 40px;
   margin-bottom: 35px;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   line-height: 1;
 }
 
@@ -954,7 +954,7 @@ textarea.field-border {
 
 .src-filter {
   width: 200px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   -webkit-box-shadow: inherit !important;
           box-shadow: inherit !important;
   border-radius: 30px;

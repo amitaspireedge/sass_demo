@@ -133,7 +133,7 @@ input::placeholder, textarea::placeholder {
             }
             a {
                 font-size: 18px;
-                $font-weight;
+                font-weight: $font-medium;
             }
         }
     }
@@ -162,7 +162,7 @@ input::placeholder, textarea::placeholder {
 
     span {
     font-size: $sixtn-font;
-    $font-weight;
+    font-weight: $font-medium;
     }
 }
 .review-options {
@@ -179,7 +179,7 @@ input::placeholder, textarea::placeholder {
     border-radius: 40px;
     @include shadow-box;
     font-size: $sixtn-font;
-    $font-weight;
+    font-weight: $font-medium;
     color: $primary-color;
 
     .material-icons {
@@ -195,7 +195,7 @@ input::placeholder, textarea::placeholder {
 
 .field-label {
     font-size: $sixtn-font;
-    $font-weight;
+    font-weight: $font-medium;
     margin-bottom: 10px;
     @include dis-prop;
     align-items: flex-start;
@@ -362,7 +362,7 @@ textarea.field-border {
 
     p {
         font-size: $sixtn-font;
-        $font-weight;
+        font-weight: $font-medium;
         width: 470px;
         line-height: 1.3;
         color: $primary-color;
@@ -378,13 +378,13 @@ textarea.field-border {
      p {
         font-size: $sixtn-font;
         color: $primary-color;
-        $font-weight;
+        font-weight: $font-medium;
     }
     .form-group label {
         position: relative;
         cursor: pointer;
         font-size: $sixtn-font;
-        $font-weight;
+        font-weight: $font-medium;
         @include dis-prop;
         width: 470px;
         align-items: center;
@@ -475,7 +475,7 @@ textarea.field-border {
 
         li a {
             font-size: $sixtn-font;
-            $font-weight;
+            font-weight: $font-medium;
         }
     }
     li:last-child {
@@ -491,7 +491,7 @@ textarea.field-border {
 
 .f-copyright {
     font-size: $sixtn-font;
-    $font-weight;
+    font-weight: $font-medium;
     margin-top: 25px;
 }
 .svg-icon img {
@@ -529,7 +529,7 @@ textarea.field-border {
 
     label {
         font-size: 22px;
-        $font-weight;
+        font-weight: $font-medium;
         color:$whit-color;
         padding-left: 40px;
         margin-bottom: 20px;
@@ -547,7 +547,7 @@ textarea.field-border {
     input {
         padding: 20px 90px 20px 40px;
         font-size: 18px;
-        $font-weight;
+        font-weight: $font-medium;
     }
     .src-submit {
         right: 40px;
@@ -595,7 +595,7 @@ textarea.field-border {
 }
 .beach-location {
     font-size: $sixtn-font;
-    $font-weight;
+    font-weight: $font-medium;
     line-height: 1;
     margin-top: 5px;
 }
@@ -610,7 +610,7 @@ textarea.field-border {
     font-size: 20px;
 }
 .section-heading {
-    $sec-heading-font;
+    font-size: $sec-heading-font;
     margin-bottom: 35px;
     font-family: $font-Kaushan;
     line-height: 1;
@@ -654,7 +654,7 @@ textarea.field-border {
 }
 .ac-cta-link a {
     color: $secondary-color;
-    $font-weight;
+    font-weight: $font-medium;
 
     a:hover {
         color: $primary-color;
@@ -663,7 +663,7 @@ textarea.field-border {
 .reg-check-box {
     @include dis-prop;
     align-items: center;
-    $font-weight;
+    font-weight: $font-medium;
     margin-bottom: 20px;
     position: relative;
 
@@ -768,7 +768,7 @@ textarea.field-border {
     border-radius: 30px;
     border: 1px solid $primary-color !important;
     color: $primary-color !important;
-    $font-weight;
+    font-weight: $font-medium;
     appearance: none;
     outline: none;
     cursor: pointer;
@@ -871,7 +871,7 @@ textarea.field-border {
         font-size: 22px;
         margin: 0 auto;
         line-height: 1.5;
-        $font-weight;
+        font-weight: $font-medium;
     }
     .submit-btn {
         display: inline-block;
@@ -880,7 +880,7 @@ textarea.field-border {
     }
 }
 .back-to-home {
-    $font-weight;
+    font-weight: $font-medium;
     margin-top: 38px;
     display: inline-block;
 
@@ -979,7 +979,7 @@ textarea.field-border {
     font-size: 15px;
 
     .material-icons {
-        $sec-heading-font;
+        font-size: $sec-heading-font;
     }
 }
 .hero-src-cover {

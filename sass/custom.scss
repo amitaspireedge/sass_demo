@@ -115,7 +115,7 @@ a.submit-btn.back {
 
 .edit-profile-email{
    font-size: $sixtn-font;
-    $font-weight;
+    font-weight: $font-weight;
     margin: 35px 0;
 
     p {
@@ -137,7 +137,7 @@ textarea#fname {
 }
 .edit-form-sub-headings{
     font-size: 26px;
-    $font-weight;
+    font-weight: $font-weight;
     margin-bottom: 15px;
     align-items: center;
 
@@ -211,7 +211,7 @@ span.cam-icon {
 
 .profile-left > span {
     color: $secondary-color;
-    $font-weight;
+    font-weight: $font-weight;
     font-size: 21px;
 }
 /*-------about-us-------*/
@@ -370,7 +370,7 @@ span.cam-icon {
 
     .numb{
         font-size: $sixtn-font;
-        $font-weight;
+        font-weight: $font-weight;
         margin-left: 20px;
     }
     .star-rated .material-icons {
@@ -422,7 +422,7 @@ span.read-mor {
     font-size: $sixtn-font;
     text-decoration: underline;
     margin-top: -8px;
-    $font-weight;
+    font-weight: $font-weight;
 }
 
 .ser-icons .svg-icon img {
@@ -487,7 +487,7 @@ ul.ser-icons li:last-child {
 .auth-info{
 
     .date {
-        $font-weight;
+        font-weight: $font-weight;
     }
     .auth-info .star-rated {
         margin-left: auto;
@@ -584,7 +584,7 @@ ul.ser-icons li:last-child {
     }
     span {
         color: $secondary-color;
-        $font-weight;
+        font-weight: $font-weight;
     }
 }
 
