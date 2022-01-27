@@ -49,10 +49,10 @@ input::placeholder, textarea::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 18px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 18px 0;
   width: 93%;
   margin: 0 auto;
 }

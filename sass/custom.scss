@@ -8,8 +8,7 @@
     height: 60px;
 }
 .radio-btn {
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     margin-top: 7px;
     justify-content: space-between;
 }
@@ -58,9 +57,8 @@
     margin-left: auto;
 }
 .pictures-upload-sec{
-    @include dis-prop;
+    @include flex-center;
     justify-content: space-between;
-    align-items: center;
     padding: 5px 0;
 }
 .file-upload-here{
@@ -197,8 +195,7 @@ span.cam-icon {
     height: 35px;
     width: 35px;
     border-radius: 100%;
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     justify-content: center;
     bottom: 23px;
     right: 80px;
@@ -225,8 +222,7 @@ span.cam-icon {
     margin-left: auto;
 }
 .abt-two-div {
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
 }
 .abt-two-div .about-descrip .page-heading {
     padding-left: 0;
@@ -308,8 +304,7 @@ span.cam-icon {
 
 /*-----------no_review_page--------------*/
 .review-page{
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     justify-content: space-between;
 
     .write-review {
@@ -397,7 +392,7 @@ span.cam-icon {
 
 .serch-beach{
     margin-top:15px;
-    @include dis-prop;
+    display: flex;
    align-items: flex-start;
 }
 .serch-beach-icons .custom-checkbox {
@@ -405,7 +400,7 @@ span.cam-icon {
 }
 .ser-icons {
     list-style: none;
-    @include dis-prop;
+    display: flex;
     padding: 0;
     flex-flow: wrap;
     margin-bottom: 0;
@@ -463,8 +458,7 @@ ul.ser-icons li:last-child {
     line-height: 1;
 }
 .auth-info {
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     margin-bottom: 15px;
 }
 .auth-profile {
@@ -509,7 +503,7 @@ ul.ser-icons li:last-child {
     }
 }
 .beach-gallery {
-    @include dis-prop;
+    display: flex;
     flex-flow: wrap;
 }
 .beach-gallery-items {
@@ -634,7 +628,7 @@ span.arrow img {
 }
 /*-------16/11---------*/
 .privacy-two-sec{
-    @include dis-prop;
+    display: flex;
 
     li {
         list-style: disc;
@@ -1170,7 +1164,7 @@ span.upload-svg img {
     height: 52px;
 }
 .check-multiple.radio {
-    @include dis-prop;
+    display: flex;
 }
 .field-cover.other {
     @include widt;

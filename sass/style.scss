@@ -33,8 +33,8 @@ input::placeholder, textarea::placeholder {
 }
 .header-inner {
     justify-content: space-between;
-    padding: 18px 0;
     align-items: center;
+    padding: 18px 0;
     width: 93%;
     margin: 0 auto;
 }
@@ -42,7 +42,7 @@ input::placeholder, textarea::placeholder {
     width: 260px;
 }
 .h-src-inr {
-    @include dis-prop;
+    display: flex;
     position: relative;
 
     input {
@@ -66,8 +66,7 @@ input::placeholder, textarea::placeholder {
     }
 }
 .header-right {
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     justify-content: flex-end;
 }
 .toggle {
@@ -109,8 +108,7 @@ input::placeholder, textarea::placeholder {
     }
 }
 .nav-toggle-cover {
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
    background:$whit-color;
     border-radius: 50px;
     padding: 4px 8px 4px 12px;
@@ -119,7 +117,7 @@ input::placeholder, textarea::placeholder {
 /*----Write Review----*/
 .review-options {
     ul {
-        @include dis-prop;
+        display: flex;
         align-items: center;
         list-style: none;
         padding: 0;
@@ -197,7 +195,7 @@ input::placeholder, textarea::placeholder {
     font-size: $sixtn-font;
     font-weight: $font-medium;
     margin-bottom: 10px;
-    @include dis-prop;
+    display: flex;
     align-items: flex-start;
 }
 .field-cover {
@@ -207,8 +205,7 @@ input::placeholder, textarea::placeholder {
     width: 30px;
     height: 30px;
     background-color: $secondary-color;
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     justify-content: center;
     color:$whit-color;
     border-radius: 100%;
@@ -227,7 +224,7 @@ textarea.field-border {
 }
 
 .check-multiple {
-    @include dis-prop;
+    display: flex;
     flex-flow: wrap;
      padding: 30px 30px 0;
    
@@ -245,8 +242,7 @@ textarea.field-border {
 .custom-checkbox label {
     cursor: pointer;
     margin-bottom: 0;
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     &:hover {
         color: $secondary-color;
     }
@@ -290,7 +286,7 @@ textarea.field-border {
     }
 }
 .facility-sec{
-    @include dis-prop;
+    display: flex;
     flex-flow: wrap;
     justify-content: space-between;
     padding: 30px 30px 0;
@@ -303,7 +299,7 @@ textarea.field-border {
     margin-right: 10px;
 }
 .multiple-opt {
-    @include dis-prop;
+    display: flex;
     justify-content: space-between;
 
     li {
@@ -327,8 +323,7 @@ textarea.field-border {
     font-size: $sixtn-font;
     font-weight: 900;
     color:$whit-color !important;
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     background-color: $secondary-color;
     padding: 15px 10px 15px;
     line-height: 1;
@@ -385,7 +380,7 @@ textarea.field-border {
         cursor: pointer;
         font-size: $sixtn-font;
         font-weight: $font-medium;
-        @include dis-prop;
+        display: flex;
         width: 470px;
         align-items: center;
         line-height: 1.2;
@@ -464,7 +459,7 @@ textarea.field-border {
         margin: 0;
         list-style: none;
         padding: 0;
-        @include dis-prop;
+        display: flex;
         justify-content: center;
    
     li {
@@ -518,8 +513,7 @@ textarea.field-border {
 }
 .hero-inner {
     height: 94vh;
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     justify-content: center;
     position: relative;
 }
@@ -559,7 +553,7 @@ textarea.field-border {
     width: 90%;
 }
 .review-cover {
-    @include dis-prop;
+    display: flex;
 }
 .review-item {
     width: calc(25% - 30px);
@@ -600,7 +594,7 @@ textarea.field-border {
     margin-top: 5px;
 }
 .beach-desc {
-    @include dis-prop;
+    display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
@@ -648,8 +642,7 @@ textarea.field-border {
 }
 
 .reg-pop-footer {
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     justify-content: space-between;
 }
 .ac-cta-link a {
@@ -661,8 +654,7 @@ textarea.field-border {
     }
 }
 .reg-check-box {
-    @include dis-prop;
-    align-items: center;
+    @include flex-center;
     font-weight: $font-medium;
     margin-bottom: 20px;
     position: relative;
@@ -830,7 +822,7 @@ textarea.field-border {
     }
 }
 .two-col-advt {
-    @include dis-prop;
+    display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
 }
@@ -846,7 +838,7 @@ textarea.field-border {
     margin: 0 auto;
 }
 .side-ad-banner {
-    @include dis-prop;
+    display: flex;
     justify-content: space-between;
 }
 .side-banner {
@@ -1629,7 +1621,7 @@ section.latest-review.mt-5 {
     @include widt;
 }
 .multiple-opt {
-   @include dis-prop;
+   display: flex;
     flex-flow: wrap;
     justify-content: center;
 
@@ -1674,7 +1666,7 @@ section.latest-review.mt-5 {
     margin-bottom: 15px;
 }
 .review-cover {
-    @include dis-prop;
+    display: flex;
     flex-flow: wrap;
     justify-content: space-between;
 }
